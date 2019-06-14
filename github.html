@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rachel Albiston's Github</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<style type="text/css">
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    font-family: Tahoma, Ariel, Helvetica, Geneva;
+    color: rgba(95, 99, 102, 1);
+    background-color:rgb(255,250,240);
+}
+.container{
+    /*1 em =16px*/
+    max-width: 100%;
+    width: 70em;
+    background-color: rgb(240,255,255);
+    /* cenrtalise */
+    margin: auto;
+    padding: 2;
+}
+h2 {
+    /* top right bottom left*/
+    margin: 0.5em 0 0.5em 0.5em;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(122,148,178);
+    font-family: Impact;
+}
+h3 {
+    margin: 0.6em 0 0.5em 0.1em;
+    text-decoration: underline;
+    text-decoration-color: rgb(122,148,178);
+    font-family: Impact, Charcoal, sans-serif;
+}
+    .imgSizer{
+        width: 700px;
+        margin-bottom: 20px;
+        
+    }
+    .vid_div{
+        margin-bottom: 30px;
+    }
+    .emphasise{
+        font-style: italic;
+        font-weight:bolder; 
+
+    }
+
+
+    </style>
+</head>
+<body>
+        <div class="container"> 
+    <hr>
+    <h2>FIRST SPRINT </h2>
+    <p>The aim of my first sprint is to create <span class="emphasise"> a defined drawing area on the canvas. </span> <br>
+    When mousedown and mousemove are true, the rectangle should change size and shape dependant on the MouseStart and current mouse coordinations.   <br>
+    As the mouse is released the rectangle should form on the canvas. I also plan to create a boundary box which I will then put listeners and restrictions in during the next sprint. 
+   <br></p>
+    <div><img class="imgSizer" src="sprint one two/sprintone.jpg"></div>
+
+    <h3>TRELLO PLANING</h3>
+    <div><img class="imgSizer" src="sprint one two/trelloone.jpg"></div>
+    <h3> TESTING </h3>
+    <p> The <span class="emphasise"> first test </span> explores the movement of the mouse with the guided rectangle on the canvas - without boundary box. 
+        User clicks down and drags mouse around drafting a rectangle, however when released rectangle is not placed on the canvas.</p>
+    <div class="vid_div"><video width="600"  controls>
+            <source src="sprint one two/test2.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p> The <span class="emphasise"> second test </span> shows the movement of the mouse with the guided rectangle on the canvas - without boundary box. 
+                User clicks down and drags mouse around drafting a rectangle, when released rectangle is placed on the canvas.  </p>
+    <div class="vid_div"><video width="600"  controls>
+            <source src="sprint one two/test3.mov" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+        <p> The <span class="emphasise"> third and final test, </span> this test will comeplete my first sprint.<br>
+            The completed sprint should show the movement of the mouse with the guided rectangle on the canvas. If user releases the mouse a rectangle should appear on the canvas.
+            Boundary box should be created however doesn't have any boundary features as of yet. </p>
+    <div class="vid_div"><video width="600"  controls>
+            <source src="sprint one two/test1.mov" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+        <h3> REFLECTION </h3>
+        <p> After finishing sprint one, I can move on to building listeners, restrictions, and bound checks on my boundary box to ensure when drawing a rectangle it only draws inside this box. </p>
+        <hr> 
+
+        <hr> 
+        <h2>SECOND SPRINT</h2>
+        <p>My aim for this sprint is to create <span class="emphasise">restrictions to only be able to draw inside the boundary box.</span> <br> 
+        When mousedown and mousemove are true, the rectangle should change size and shape dependant on the mousestart and current mouse coordinations.   <br>
+        As the mouse is released the rectangle should appear inside the boundary box. If the mouse is dragged outside the boundary box the rectangle should not form. <br> </p>
+        <div><img class="imgSizer" src="sprint one two/sprintone.jpg"></div>
+
+    <h3>TRELLO PLANING</h3>
+    <div><img class="imgSizer" src="sprint one two/trellotwo.png"></div>
+
+    <h3> TESTING </h3>
+    <p> The <span class="emphasise"> first test </span> explores the movement of the mouse inside the boundary box. <br>
+        I tested moving the mouse through and around my boundary box by using true and false, if the mouse was inside the boundary box there would be a console log of true and if it wasn't inside the box there would be a console log of false.
+    <div><img class="imgSizer" src="sprint one two/consolelog.jpg"></div>
+
+    <p> The <span class="emphasise"> second and final test, </span> this test will comeplete my overall first and second sprint.<br>
+        The completed sprint should show the movement of the mouse with the guided rectangle inside the boundary box and not outside this box. If user releases the mouse a rectangle should appear inside the boundary box.<br> 
+        If user tries to draw outside the boundary box there should be no movement. 
+       </p>
+    <div class="vid_div"><video width="600"  controls>
+            <source src="sprint one two/test4.mov" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <h3> REFLECTION </h3>
+        <p> After finishing sprint two, I can move on to creating buttons for different shapes and allow the user to make a decision whether they will create a rectangle or ellipse. </p>
+
+        <h3> LINK </h3>
+        <li><a href="sprint one two/sprintone.html"> Sprint One/Two - Drawing inside boundary box </a></li>
+        <hr>
+
+
+    <hr>
+    <h2>THIRD SPRINT </h2>
+    <p>My aim for this sprint is to create <span class="emphasise">two buttons allowing me to select a particular shape to draw on the canvas.</span> <br> 
+    This allows the user to draw with either an ellipse or a rectangle inside the boundary box. </p>
+    <div><img class="imgSizer" src="sprint three/twobuttons.jpg"></div>
+
+    <h3>TRELLO PLANING</h3>
+    <div><img class="imgSizer" src="sprint three/trellothree.jpg"></div>
+
+    <h3> TESTING </h3>
+    <p>  The <span class="emphasise"> first test </span> explores the creation of the buttons. <br>
+        Via my new file button.js I am able to create a function and push the buttons through if the mouse is in the boundary and mouse is down.     
+    <div><img class="imgSizer" src="sprint three/buttons.jpg"></div>
+
+    <p>  The <span class="emphasise"> second test </span> explores my new shape an ellipse. <br>
+        Similar to the creation of my rectangle this new shape needs to be tested to ensure it works for the user.       
+        <div class="vid_div"><video width="600"  controls>
+                <source src="sprint three/ellipsetest.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+
+     <p> The <span class="emphasise"> third and final test, </span> this test will comeplete my third sprint.<br>
+        The completed sprint should show my two new buttons, Ellipse and Rectangle, which when selected will draw and be created inside the boundary box on the canvas. <br>
+        <div class="vid_div"><video width="600"  controls>
+            <source src="sprint three/completed.mov" type="video/mp4">
+            Your browser does not support the video tag.
+             </video>
+            </div>
+
+    <h3> REFLECTION </h3>
+    <p> After finishing sprint three, I can move on to creating colour swatches for the shapes. </p>
+    
+    <h3> LINK </h3>
+    <li><a href="sprint three/sprintthree.html"> Sprint Three - Buttons with two shapes </a></li>
+    <hr>
+
+    <hr>
+    <h2>FOURTH SPRINT </h2>
+    <p>My aim for this sprint is to create <span class="emphasise">colour swatches so I can draw my shapes with different colours.</span> <br> 
+    This allows the user to draw with either an ellipse or a rectangle inside the boundary box with a range of six potential colours. </p>
+    <div><img class="imgSizer" src="sprint four/fourth.png"></div>
+
+    <h3>TRELLO PLANING</h3>
+    <div><img class="imgSizer" src="sprint four/trellofourth.jpg"></div>
+
+    <h3> TESTING </h3>
+    <p>  The <span class="emphasise"> first test </span> explores the creation of the colour swatch array. <br>
+        Via my new file button.js I am able to create a function and push the buttons through if the mouse is in the boundary and mouse is down. I used swatch.selectedcolour to fill the drawing shape to the colour inputted when the mouse is inside the boundary.
+    <div><img class="imgSizer" src="sprint four/colourswatcharray.png"></div>
+
+    <p>  The <span class="emphasise"> second test </span> explores how the user knows what colour is selected. Using the drawStrokeRect function I am able to highlight the stroke colour when button is selected. This makes it more practical for the user to draw as they know what colour they've selected.  <br>      
+        <div><img class="imgSizer" src="sprint four/selectedcolarray.png"></div>
+
+     <p> The <span class="emphasise"> third and final test, </span> this test will comeplete my fourth sprint.<br>
+        The completed sprint should show my new colour swatch array, with six colours, which when a shape is selected will draw in the colour selected, shown to the user by the stroke border colour. <br>
+        <div class="vid_div"><video width="600"  controls>
+            <source src="sprint four/four.mov" type="video/mp4">
+            Your browser does not support the video tag.
+             </video>
+            </div>
+
+    <h3> REFLECTION </h3>
+    <p> After finishing sprint four, I can move onto creating another shape - a Diamond. </p>
+    
+    <h3> LINK </h3>
+    <li><a href="sprint four/sprintfour.html"> Sprint Four - Colour Swatch Selection </a></li>
+    <hr>
+
+
+    <hr>
+    <h2>FIFTH SPRINT </h2>
+    <p>My aim for this sprint is to create <span class="emphasise"> a diamond to draw inside the boundary box.</span> <br> 
+    This allows the user to have more options when drawing inside the boundary box. </p>
+    <div><img class="imgSizer" src="sprint five/overview.png"></div>
+
+    <h3>TRELLO PLANING</h3>
+    <div><img class="imgSizer" src="sprint five/fifthtrello.png"></div>
+
+    <h3> TESTING </h3>
+    <p>  The <span class="emphasise"> first test </span> explores the creation of button for the diamond function. <br>
+        Through the button.js file I am able to create a diamond button which can be used when selected to draw the diamond.
+    <div><img class="imgSizer" src="sprint five/diamondbutton.png"></div>
+
+    <p>  The <span class="emphasise"> second test </span> explores the drawing of the diamond when mouse is up and inside the boundary box, this tests whether the button 'Diamond' is pushing the object through object set.<br>      
+        I also had an issue where some of the diamond was being drawn outside the boundary box, this required me to create the clip() function to clip the object and prevent it from shown outside the boundary box. 
+        <div class="vid_div"><video width="600"  controls>
+            <source src="sprint five/test2.mov" type="video/mp4">
+            Your browser does not support the video tag.
+             </video>
+            </div>
+
+
+     <p> The <span class="emphasise"> third and final test, </span> this test will comeplete my fifth sprint.<br>
+        The completed sprint should show my new diamond shape which should appear when the button is selected and mouse is inside the boundary box.   <br>
+        <div class="vid_div"><video width="600"  controls>
+            <source src="sprint five/diamond.mov" type="video/mp4">
+            Your browser does not support the video tag.
+             </video>
+            </div>
+
+    <h3> REFLECTION </h3>
+    <p> After finishing sprint five, I can move onto creating undo and reset buttons, plus a new colour theme for my program and a background box for my colour swatch array . </p>
+    
+    <h3> LINK </h3>
+    <li><a href="sprint five/sprintfive.html"> Sprint Five - Three Shapes </a></li>
+    <hr>
+
+
+    <hr>
+    <h2>SIXTH SPRINT </h2>
+    <p>My aim for this sprint is to create <span class="emphasise"> undo and reset buttons, along with a new colour scheme and layout </span> for my program.<br> 
+    This allows th program to be more practical for the user and overall look more appealling to the eye. </p>
+    <div><img class="imgSizer" src="sprint six/overview.png"></div>
+
+    <h3>TRELLO PLANING</h3>
+    <div><img class="imgSizer" src="sprint six/sixthtrello.png"></div>
+
+    <h3> TESTING </h3>
+    <p>  The <span class="emphasise"> first test </span> explores the creation of the undo and reset buttons. <br>
+        To reset I am using the class objectSet and clearing it which will reset the screen back to how it started, and to undo I am using the class objectSet.pop() to remove the last shape added into objectSet.
+        <div class="vid_div"><video width="600"  controls>
+            <source src="sprint six/undoandresettest.mov" type="video/mp4">
+            Your browser does not support the video tag.
+             </video>
+            </div>
+
+    <p>  The <span class="emphasise"> second test </span> was changing the theme colour and creating a white background to put under the colour array. <br>      
+       This was enabled to make the program look more professional and easiest to read and understand. I did this creating a Background class, similar to my drawingPage class however without the boundary aspects. This meant I created x,y,w,h values to know the size of the white background rectangle. <br> 
+       I also changed my swatch colours via my init.js file and added more shades to introduce more versatility into the program making it more useable.
+       <div><img class="imgSizer" src="sprint six/newcolours.png"></div>
+
+
+     <p> The <span class="emphasise"> third and final test, </span> this test will comeplete my sixth sprint.<br>
+        The completed sprint should show my new butons - undo and reset, along with my new colour scheme and program layout.  <br>
+        <div class="vid_div"><video width="600"  controls>
+            <source src="sprint six/completedsixth.mov" type="video/mp4">
+            Your browser does not support the video tag.
+             </video>
+            </div>
+
+    <h3> REFLECTION </h3>
+    <p> After finishing sprint six, I can move onto creating a circle, line and more colourful colour array. </p>
+    
+    <h3> LINK </h3>
+    <li><a href="sprint six/sprintsix.html"> Sprint Six - Undo and Reset Buttons</a></li>
+    <hr>
+
+
+    <hr>
+    <h2>SEVEN SPRINT </h2>
+    <p>My aim for this sprint is to create <span class="emphasise"> a circle, line and more colourful colour array. </span> </p>
+    <div><img class="imgSizer" src="sprint seven /overview.png"></div>
+
+    <h3>TRELLO PLANING</h3>
+    <div><img class="imgSizer" src="sprint seven /trello.png"></div>
+
+    <h3> TESTING </h3>
+    <p>  The <span class="emphasise"> first test </span> was designing a circle, this created another shape for the user to play with which makes program more interesting and active. <br>
+        I did this by creating a circle class and using math.abs to make the values always positive, and this.r to set the radius of the circle. 
+        <div class="vid_div"><video width="600"  controls>
+            <source src="sprint seven /circle test.mov" type="video/mp4">
+            Your browser does not support the video tag.
+             </video>
+            </div>
+
+    <p>  The <span class="emphasise"> second test </span> was designing the line to again add more variety to the user. I decided just to test one size for now but later on I might investigate creating more as this will be more beneficial to the user and the program.<br>    
+        I did this by creating a line class and using xMouseStart and yMousStart to know the location where the mouse started and then using xMouse and yMouse to see where the mouse ended up. We can then take all these numbers and draw a line between them which will create my line shape.    
+        <div class="vid_div"><video width="600"  controls>
+            <source src="sprint seven /linetest.mov" type="video/mp4">
+            Your browser does not support the video tag.
+             </video>
+            </div>
+
+     <p> The <span class="emphasise"> third and final test, </span> this test will comeplete my seventh sprint.<br>
+        The completed sprint should show my two new shapes - circle and line, along with the new brighter colours for my colour array, these colours represent more of a drawing type program instead of the more sophisticated colour selection in my previous sprint.  <br>
+        <div class="vid_div"><video width="600"  controls>
+            <source src="sprint seven /completedseven.mov" type="video/mp4">
+            Your browser does not support the video tag.
+             </video>
+            </div>
+
+    <h3> REFLECTION </h3>
+    <p> After finishing sprint seven, I can move onto creating a different size lines. </p>
+    
+    <h3> LINK </h3>
+    <li><a href="sprint seven /sprintseven.html"> Sprint Seven - Five Shapes </a></li>
+    <hr>
+
+
+    <hr>
+    <h2>EIGHTH SPRINT </h2>
+    <p>My aim for this sprint is to attach <span class="emphasise"> different sizes to the previously made line shape. </span> </p>
+    <div><img class="imgSizer" src="sprint eight /eightoverview.png"></div>
+
+    <h3>TRELLO PLANING</h3>
+    <div><img class="imgSizer" src="sprint eight /trello.png"></div>
+
+    <h3> TESTING </h3>
+    <p>  The <span class="emphasise"> first test </span> was creating the new button class (mini_Button), it also needs to include new variables such as the universal mini_Button.selectedW, which should be equal to new variable this.width. <br>
+        <div><img class="imgSizer" src="sprint eight /mini_Button.png"></div>
+        <div><img class="imgSizer" src="sprint eight /class.png"></div>
+
+    <p>  The <span class="emphasise"> second test </span> is ensuring this.dx is equal to mini_Button.selectedW, and this variable is called when Button.selectedShape == "Line" so the user can change the different size of the line for each mini button in the main.js file. 
+        <div><img class="imgSizer" src="sprint eight /equal to.png"></div>
+        <div><img class="imgSizer" src="sprint eight /line.png"></div>
+
+
+     <p> The <span class="emphasise"> third and final test, </span> this test will comeplete my eighth sprint.<br>
+        The completed sprint should show my different sizes line buttons, enabling the program to draw five different size lines.  <br>
+        <div class="vid_div"><video width="600"  controls>
+            <source src="sprint eight /completedeight.mov" type="video/mp4">
+            Your browser does not support the video tag.
+             </video>
+            </div>
+
+    <h3> REFLECTION </h3>
+    <p> After finishing sprint eight, I can move onto creating a brush with different sizes. </p>
+    
+    <h3> LINK </h3>
+    <li><a href="sprint eight /sprinteight.html"> Sprint Eight - Line with different sizes </a></li>
+    <hr>
+
+
+    <hr>
+    <h2>NINETH SPRINT </h2>
+    <p>My aim for this sprint is to create <span class="emphasise"> a brush shape with five different sizes to draw in the program. </span> </p>
+    <div><img class="imgSizer" src="sprint nine/overview.png"></div>
+
+    <h3>TRELLO PLANING</h3>
+    <div><img class="imgSizer" src="sprint nine/trellonine.png"></div>
+
+    <h3> TESTING </h3>
+    <p>  The <span class="emphasise"> first test </span> was creating adding to the class we created last sprint (mini_Button), to this class we are adding a new variables such as the universal mini_Button.selectedR, and making this equal to new variable this.radius. This will allow us to have multiple brush sizes later in the sprint.<br>
+        <div><img class="imgSizer" src="sprint nine/variable.png"></div>
+        <div><img class="imgSizer" src="sprint nine/equal to.png"></div>
+
+    <p>  The <span class="emphasise"> second test </span> is ensuring that in drawingpage.js this.r is equal to mini_Button.selectedR and when calling the Button.selectedShape == "Brush", include this.r as one of the variables. <br>
+        When this is all linked you can create five new mini buttons and one main button and change the radius figures on each button which will give the different brush sizes. I have chosen my sizes as 2,5,10,15,20 to give a wide range of potential choices.
+        <div><img class="imgSizer" src="sprint nine/brush button.png"></div>
+        <div><img class="imgSizer" src="sprint nine/create brush.png"></div>
+
+
+     <p> The <span class="emphasise"> third and final test, </span> this test will comeplete my nineth sprint.<br>
+        The completed sprint should show my new brush shape and the five different sizes the program can draw.  <br>
+        <div class="vid_div"><video width="600"  controls>
+            <source src="sprint nine/completednine.mov" type="video/mp4">
+            Your browser does not support the video tag.
+             </video>
+            </div>
+
+    <h3> REFLECTION </h3>
+    <p> After finishing sprint nine, I can move onto creating a dye button to fill the boundary box. </p>
+    
+    <h3> LINK </h3>
+    <li><a href="sprint nine/sprintnine.html"> Sprint Nine - Brush with different sizes </a></li>
+    <hr>
+
+
+    <hr>
+    <h2>TENTH SPRINT </h2>
+    <p>My aim for this sprint is to create <span class="emphasise"> a dye button to colour fill the boundary box, clean up any erroers, and add some colour loops into my code to make it easier to read and understand. </span> </p>
+    <div><img class="imgSizer" src="sprint ten/overview.png"></div>
+
+    <h3>TRELLO PLANING</h3>
+    <div><img class="imgSizer" src="sprint ten/tentrello.png"></div>
+
+    <h3> TESTING </h3>
+    <p>  The <span class="emphasise"> first test </span> was creating my colour edit button. This button has the ability to change the colour of any last created object, for example if nothing on the camvas it will change the canvas colour itself. However, if their are shapes on the canvas it will change the colour of the most recent one drawn. <br> 
+        This object make it easy for the user to fix mistakes or if they've changed their mind about something, or to have different canvas colours.<br>
+        <div class="vid_div"><video width="600"  controls>
+            <source src="sprint ten/colouredit.mov" type="video/mp4">
+            Your browser does not support the video tag.
+             </video>
+            </div>
+
+    <p>  The <span class="emphasise"> second test </span> was creating my rotating rectangle button, including five different speeds to give other complex shapes to the program. <br> 
+        By using the mini_Button class and variables such as this.degrees, this.degreecount, and mini_Button.selectedD I am able to program so that each rotation rectangle drawn has a different speed depending on what mini_Button is selected. 
+        <div class="vid_div"><video width="600"  controls>
+            <source src="sprint ten/rotationtest.mov" type="video/mp4">
+            Your browser does not support the video tag.
+             </video>
+            </div>
+
+
+     <p> The <span class="emphasise"> third and final test, </span> this test will comeplete my tenth and final sprint.<br>
+        The completed sprint should show my new rotating rectangle with five different speeds, and my new colour edit button, as well as everything else from my past sprints. <br>
+        My completed program should be drawing, active with no errors or bugs which would prevent the program from running.
+        <div class="vid_div"><video width="600"  controls>
+            <source src="sprint ten/finaltest.mov" type="video/mp4">
+            Your browser does not support the video tag.
+             </video>
+            </div>
+
+    <h3> REFLECTION </h3>
+    <p> After finishing my final sprint and overall program there is nothing else to edit. Overall reflection, I am extremely happy with the drawing program I have produced and I believe will be handy and loved by it's user. If I was to complete a project like this again, or further improve this one I would like to elaborate on creating more shapes and active objects. <br>
+        I would be interested in the user being able to add text to their drawing, and also added shapes which only have a stroke colour not a fill colour. <br>
+        Another improvement would be to have a larger canvas giving more room for the user to create their masterpiece. </p>
+    
+    <h3> LINK </h3>
+    <li><a href="sprint ten/sprintten.html"> Sprint Ten - Final Drawing Program </a></li>
+    <hr>
+
+</div>
+</body>
+    </html>
