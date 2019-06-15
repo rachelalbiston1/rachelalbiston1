@@ -433,13 +433,13 @@ h3 {
     <hr>
             
      <h2> IMPLICATIONS </h2>
-     <p> Future Proofing - the drawing program is designed so new features can be easily added and old ones removed from the code. <br>
-         Addressed - the drawing program has been addressed via program elements such as colours, buttons, and shapes, these have all been programmed as objects, meaning that each object is a self-contained modular piece of code. These take a defined set of parametres to run and draw, which consists of basic mouse data and colour information. <br>
-         Structure - all objects are built in a similar structure and compulsorily contain an update function which means they can appear on the interface using the update call. <br>
-         Management - the management around most objects occurs in a central location (drawingPage.js). The overall idea is that an experienced programmer could easily add new features or remove elements, by the creator heavily commenting the code (imformatively and pricisely) to help show where and what the functions are called. </p>
+     <p> <span class="emphasise"> Future Proofing - </span> the drawing program is designed so new features can be easily added and old ones removed from the code. <br>
+         <span class="emphasise"> Addressed - </span> the drawing program has been addressed via program elements such as colours, buttons, and shapes, these have all been programmed as objects, meaning that each object is a self-contained modular piece of code. These take a defined set of parametres to run and draw, which consists of basic mouse data and colour information. <br>
+         <span class="emphasise"> Structure - </span> all objects are built in a similar structure and compulsorily contain an update function which means they can appear on the interface using the update call. <br>
+         <span class="emphasise"> Management - </span> the management around most objects occurs in a central location (drawingPage.js). The overall idea is that an experienced programmer could easily add new features or remove elements, by the creator heavily commenting the code (imformatively and pricisely) to help show where and what the functions are called. </p>
      
     <h3> FUNCTIONALITY </h3>
-    <p> Functionality questions whether the program works well - free of bugs, is responsive, loads, is fast, and works on different browsers. <br>
+    <p>  <span class="emphasise"> Functionality questions whether the program works well - </span> free of bugs, is responsive, loads, is fast, and works on different browsers. <br>
         This has been addressed by being programmed in pur javascript, there is no graphics which means it is able to load quickly for the user. <br> 
         The program has also been throughly tested using a live web server to store my past and present versions, by this I have observed and judged the loading performance. <br>
         To ensure the program works well and is acceptable to give to other users I have systematically tested it - user interactions (position of clicking and direction of dragging), careful checks around the boundaries, the use of the Math.abs function was discovered after testing failures drawing circular shapes (these objects were being given negative radius values). <br>
