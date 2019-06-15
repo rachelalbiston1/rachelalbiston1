@@ -431,7 +431,27 @@ h3 {
     <h3> LINK </h3>
     <li><a href="sprint ten/sprintten.html"> Sprint Ten - Final Drawing Program </a></li>
     <hr>
-
+            
+     <h2> IMPLICATIONS </h2>
+     <p> Future Proofing - the drawing program is designed so new features can be easily added and old ones removed from the code. <br>
+         Addressed - the drawing program has been addressed via program elements such as colours, buttons, and shapes, these have all been programmed as objects, meaning that each object is a self-contained modular piece of code. These take a defined set of parametres to run and draw, which consists of basic mouse data and colour information. <br>
+         Structure - all objects are built in a similar structure and compulsorily contain an update function which means they can appear on the interface using the update call. <br>
+         Management - the management around most objects occurs in a central location (drawingPage.js). The overall idea is that an experienced programmer could easily add new features or remove elements, by the creator heavily commenting the code (imformatively and pricisely) to help show where and what the functions are called. </p>
+     
+    <h3> FUNCTIONALITY </h3>
+    <p> Functionality questions whether the program works well - free of bugs, is responsive, loads, is fast, and works on different browsers. <br>
+        This has been addressed by being programmed in pur javascript, there is no graphics which means it is able to load quickly for the user. <br> 
+        The program has also been throughly tested using a live web server to store my past and present versions, by this I have observed and judged the loading performance. <br>
+        To ensure the program works well and is acceptable to give to other users I have systematically tested it - user interactions (position of clicking and direction of dragging), careful checks around the boundaries, the use of the Math.abs function was discovered after testing failures drawing circular shapes (these objects were being given negative radius values). <br>
+        New components were tested before being added to the main program. Through the different sprints, console.log was used to analyse boundary test functions and to locate problems when errors or bugs appear. <br> </p>
+            
+    <h3> EXAMPLE OF TRIALLING AND MAKING DECISIONS </h3>
+    <p> Trailing different options for allowing the user to draw circles on screen - giving circular or rectangular guides. <br>
+        Effectively using the information from testing and trialling to improve the functionality of the outcome, such as design and colour themes. <br>
+        Finding situations where objects were drawn outside of the drawing area (in spite of having in-boundary parameters) led to the use of the boundsCheck function. This will be tested by console.log("insideBoundary") and moving the mouse in and out of the boundary to see whether it's returning true or false. This overall lead me to use the clip() function to ensure no drawing was shown outside the boundary box. <br>
+        My working process (planning, testing, and trailing) led me to the development of a high quality digital program. This agile process was helpful when creating my program as it allowed me to plan out everything that needed to happen in each different sprint which kept me on track in terms of completing my drawing program. It also allowed the development and planning to happen together <br> 
+        I created repeated cycles of plan → develop → test through my creation period. After the third spint I was able to gather a clearer idea of what I could achieve in each sprint and my aims become more focussed and realistic in terms of what I could create for the drawing program. <br> 
+        It also helped to see the project in a highly simplified form at the start (potentially shippable product). Project backlog is a list of everything that needs to occur in the program, in terms of my creation period being a shorter one it was important to prioritize the more important aspects that needed to be included into the program, such as simple shapes like rectangles, cirles, and squares etc, but also a tool like the brush and colour editing. </p>                                                                                    
 </div>
 </body>
  </html>
